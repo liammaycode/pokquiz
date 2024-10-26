@@ -1,12 +1,21 @@
 <template>
   <div id="bigocomp">
+    <AppHeader />
     <h1>Big O</h1>
+    <AppFooter />
   </div>
 </template>
 
 <script lang="ts">
+import AppHeader from './Header.vue'
+import AppFooter from './Footer.vue'
+
 export default {
-  name: 'BigOComp'
+  name: 'BigOComp',
+  components: {
+    AppHeader,
+    AppFooter
+  }
 }
 </script>
 
